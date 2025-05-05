@@ -1,40 +1,52 @@
 <template>
     <div class="main-container">
-        <Navigation />
         <div class="main-content">
             <h1>Indiquez la marque de votre véhicule</h1>
-            <div class="brand-container">
-                <NuxtLink :to="`/subcategory/1`"
-                    ><img src="/public/img/essuie-glace.jpg" alt="" />
-                    <h4>Audi</h4></NuxtLink
+            <div class="brands-grid">
+                <NuxtLink :to="`/subcategory/1`" class="brand-item"
+                    >Audi</NuxtLink
                 >
-                <NuxtLink :to="`/subcategory/1`"
-                    ><img src="/public/img/essuie-glace.jpg" alt="" />
-                    <h4>BMW</h4></NuxtLink
+                <NuxtLink :to="`/subcategory/1`" class="brand-item"
+                    >BMW</NuxtLink
                 >
-                <NuxtLink :to="`/subcategory/1`"
-                    ><img src="/public/img/essuie-glace.jpg" alt="" />
-                    <h4>Citroen</h4></NuxtLink
+                <NuxtLink :to="`/subcategory/1`" class="brand-item"
+                    >Citroen</NuxtLink
                 >
-                <NuxtLink :to="`/subcategory/1`"
-                    ><img src="/public/img/essuie-glace.jpg" alt="" />
-                    <h4>Dacia</h4></NuxtLink
+                <NuxtLink :to="`/subcategory/1`" class="brand-item"
+                    >Dacia</NuxtLink
                 >
-                <NuxtLink :to="`/subcategory/1`"
-                    ><img src="/public/img/essuie-glace.jpg" alt="" />
-                    <h4>Fiat</h4></NuxtLink
+                <NuxtLink :to="`/subcategory/1`" class="brand-item"
+                    >Fiat</NuxtLink
                 >
-                <NuxtLink :to="`/subcategory/1`"
-                    ><img src="/public/img/essuie-glace.jpg" alt="" />
-                    <h4>Ford</h4></NuxtLink
+                <NuxtLink :to="`/subcategory/1`" class="brand-item"
+                    >Ford</NuxtLink
                 >
-                <NuxtLink :to="`/subcategory/1`"
-                    ><img src="/public/img/essuie-glace.jpg" alt="" />
-                    <h4>Hyundai</h4></NuxtLink
+                <NuxtLink :to="`/subcategory/1`" class="brand-item"
+                    >Hyundai</NuxtLink
                 >
-                <NuxtLink :to="`/subcategory/1`"
-                    ><img src="/public/img/essuie-glace.jpg" alt="" />
-                    <h4>Mercedes</h4></NuxtLink
+                <NuxtLink :to="`/subcategory/1`" class="brand-item"
+                    >Mercedes</NuxtLink
+                >
+                <NuxtLink :to="`/subcategory/1`" class="brand-item"
+                    >Nissan</NuxtLink
+                >
+                <NuxtLink :to="`/subcategory/1`" class="brand-item"
+                    >Opel</NuxtLink
+                >
+                <NuxtLink :to="`/subcategory/1`" class="brand-item"
+                    >Peugeot</NuxtLink
+                >
+                <NuxtLink :to="`/subcategory/1`" class="brand-item"
+                    >Renault</NuxtLink
+                >
+                <NuxtLink :to="`/subcategory/1`" class="brand-item"
+                    >Seat</NuxtLink
+                >
+                <NuxtLink :to="`/subcategory/1`" class="brand-item"
+                    >Toyota</NuxtLink
+                >
+                <NuxtLink :to="`/subcategory/1`" class="brand-item"
+                    >Volkswagen</NuxtLink
                 >
             </div>
         </div>

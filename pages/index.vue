@@ -1,6 +1,5 @@
 <template>
     <div class="main-container">
-        <Navigation />
         <div class="main-content">
             <h1>Que recherchez-vous ?</h1>
             <h2>Cliquez sur une catégorie pour voir les produits</h2>
@@ -8,35 +7,32 @@
             <div class="category-container">
                 <NuxtLink :to="`/category/1`"
                     ><img src="/public/img/essuie-glace.jpg" alt="" />
-                    <h4>Essuie-glace</h4></NuxtLink
+                    Essuie-glace</NuxtLink
                 >
                 <NuxtLink :to="`/category/1`"
                     ><img src="/public/img/batterie.jpeg" alt="" />
-                    <h4>Batterie</h4></NuxtLink
+                    Batterie</NuxtLink
                 >
                 <NuxtLink :to="`/category/1`"
                     ><img src="/public/img/eclairage.jpg" alt="" />
-                    <h4>Éclairage</h4></NuxtLink
+                    Éclairage</NuxtLink
                 >
                 <NuxtLink :to="`/category/1`"
-                    ><img src="/public/img/huile-moteur.png" alt="" />
-                    <h4>Huile moteur</h4></NuxtLink
+                    ><img src="/public/img/huile-moteur.png" alt="" /> Huile
+                    moteur</NuxtLink
                 >
                 <NuxtLink :to="`/category/1`"
                     ><img src="/public/img/interieur.jpg" alt="" />
-                    <h4>Intérieur</h4></NuxtLink
+                    Intérieur</NuxtLink
                 >
                 <NuxtLink :to="`/category/1`"
-                    ><img src="/public/img/siege.jpg" alt="" />
-                    <h4>Siège</h4></NuxtLink
+                    ><img src="/public/img/siege.jpg" alt="" /> Siège</NuxtLink
                 >
                 <NuxtLink :to="`/category/1`"
-                    ><img src="/public/img/siege.jpg" alt="" />
-                    <h4>Siège</h4></NuxtLink
+                    ><img src="/public/img/siege.jpg" alt="" /> Siège</NuxtLink
                 >
                 <NuxtLink :to="`/category/1`"
-                    ><img src="/public/img/siege.jpg" alt="" />
-                    <h4>Siège</h4></NuxtLink
+                    ><img src="/public/img/siege.jpg" alt="" /> Siège</NuxtLink
                 >
             </div>
         </div>
