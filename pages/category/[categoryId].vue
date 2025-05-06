@@ -1,7 +1,7 @@
 <template>
     <div class="main-container">
+        <h1>Indiquez la marque de votre véhicule</h1>
         <div class="main-content">
-            <h1>Indiquez la marque de votre véhicule</h1>
             <div class="brands-grid">
                 <NuxtLink :to="`/subcategory/1`" class="brand-item"
                     >Audi</NuxtLink

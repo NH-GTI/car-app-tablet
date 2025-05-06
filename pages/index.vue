@@ -1,9 +1,9 @@
 <template>
     <div class="main-container">
+        <h1>Que recherchez-vous ?</h1>
+        <h2>Cliquez sur une catégorie pour voir les produits</h2>
+        <h3>Faites défiler pour voir toutes les catégories</h3>
         <div class="main-content">
-            <h1>Que recherchez-vous ?</h1>
-            <h2>Cliquez sur une catégorie pour voir les produits</h2>
-            <h3>Faites défiler pour voir toutes les catégories</h3>
             <div class="category-container">
                 <NuxtLink :to="`/category/1`"
                     ><img src="/public/img/essuie-glace.jpg" alt="" />

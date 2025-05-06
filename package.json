@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@kalimahapps/vue-icons": "^1.7.1",
     "@vite-pwa/nuxt": "^1.0.0",
     "nuxt": "^3.17.0",
     "vue": "^3.5.13",

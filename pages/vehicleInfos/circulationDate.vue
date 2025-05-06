@@ -1,7 +1,7 @@
 <template>
     <div class="main-container">
+        <h1>Indiquez la date de mise en circulation de votre véhicule</h1>
         <div class="main-content">
-            <h1>Indiquez la date de mise en circulation de votre véhicule</h1>
             <div class="circulation-date-container">
                 <div class="circulation-date-item">
                     <h4>Jusqu'au 02/2018</h4>
