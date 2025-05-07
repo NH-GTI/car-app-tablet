@@ -1,7 +1,7 @@
 <template>
     <div class="main-container">
+        <h1>Indiquez le modèle de votre véhicule</h1>
         <div class="main-content">
-            <h1>Indiquez le modèle de votre véhicule</h1>
             <div class="subcategory-grid">
                 <NuxtLink
                     :to="`/vehicleInfos/circulationDate`"
