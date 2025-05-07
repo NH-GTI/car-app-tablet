@@ -1,6 +1,9 @@
 <template>
     <div class="main-container">
-        <h1>Indiquez la date de mise en circulation de votre véhicule</h1>
+        <div class="main-header">
+            <h1>Indiquez la date de mise en circulation de votre véhicule</h1>
+            <BsQuestionCircle @click="toggleModal" />
+        </div>
         <div class="main-content">
             <div class="circulation-date-container">
                 <div class="circulation-date-item">
@@ -15,7 +18,17 @@
 </template>
 
 <script setup>
-    const circulationDate = ref("");
+    import { BsQuestionCircle } from "@kalimahapps/vue-icons";
+    import { useModalStore } from "../../stores/modal";
+
+    const modalStore = useModalStore();
+
+    const { showModal } = storeToRefs(modalStore);
+
+    const toggleModal = () => {
+        console.log("toggleModal");
+        modalStore.toggleModal();
+    };
 </script>
 
 <style scoped>

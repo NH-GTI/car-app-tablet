@@ -2,7 +2,6 @@
     <div class="navigation">
         <div class="navigation-left">
             <BsHouseDoor @click="goToHome" />
-            <!-- Back to previous page -->
             <BsArrowLeft @click="goBack" />
         </div>
         <div class="navigation-right">
@@ -43,13 +42,23 @@
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        margin: 0 0 5rem 0;
+        margin: 0 0 4rem 0;
         background-color: rgb(255, 255, 255);
         height: 5rem;
     }
 
     .navigation svg {
         cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .navigation svg:hover {
+        transform: scale(1.1);
+        color: #206bb1;
+    }
+
+    .navigation svg:active {
+        transform: scale(0.95);
     }
 
     .navigation-left svg {

@@ -1,13 +1,8 @@
 <template>
-    <div class="main-container">
-        <Navigation />
+    <NuxtLayout>
         <router-view></router-view>
-    </div>
+    </NuxtLayout>
 </template>
-
-<script setup>
-    import Navigation from "./components/Navigation.vue";
-</script>
 
 <style>
     @import url("~/assets/css/style.css");

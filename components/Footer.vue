@@ -2,28 +2,25 @@
     <div class="footer">
         <div class="footer-content">
             <div class="footer-left">
-                <p>
+                <!-- <p>
                     Vous ne savez pas où trouver cette information ?
                     <button @click="toggleModal">Cliquez ici</button>
-                    <HelpGreyCardModal
-                        v-if="showModal"
-                        @closeModal="toggleModal"
-                    />
-                </p>
+                </p> -->
+                <HelpGreyCardModal v-if="showModal" @closeModal="toggleModal" />
             </div>
-            <div class="footer-right">
-                <h4>Footer</h4>
-            </div>
+            <div class="footer-right"></div>
         </div>
     </div>
 </template>
 <script setup>
-    import { ref } from "vue";
+    import { useModalStore } from "@/stores/modal";
+    import HelpGreyCardModal from "./HelpGreyCardModal.vue";
 
-    const showModal = ref(false);
+    const modalStore = useModalStore();
+    const { showModal } = storeToRefs(modalStore);
 
     const toggleModal = () => {
-        console.log("toggleModal");
-        showModal.value = !showModal.value;
+        modalStore.toggleModal();
+        console.log(showModal.value);
     };
 </script>

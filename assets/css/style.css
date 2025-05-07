@@ -15,13 +15,36 @@ body {
     /* background: linear-gradient(300deg, #6a6f74, #3285bd, deepskyblue); */
     /* background-size: 180% 180%; */
     animation: gradient-animation 18s ease infinite;
-    height: 100dvh;
     color: var(--text-color);
     background-color: var(--body-background-color);
 }
 
+button,
+svg,
+img {
+    user-select: none;
+}
+
 .main-container {
     width: 100%;
+    height: auto;
+}
+
+.main-header {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-header svg {
+    margin-left: 1rem;
+    width: 3rem;
+    height: 3rem;
+    color: rgb(240, 161, 16);
+    animation: giggle 5s ease-in-out infinite;
+    animation-delay: 3s;
+    cursor: pointer;
 }
 
 .top-bar {
@@ -189,17 +212,52 @@ body {
     position: fixed;
     top: 0;
     left: 0;
+    height: 100dvh;
+    /* left: 100%; */
+    /* transform: translateX(-50%); */
     width: 100%;
-    height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    display: none;
+    /* display: none; */
+    margin: 0 auto;
 }
 
 .help-grey-card-modal-content {
     background-color: white;
+    width: clamp(500px, 50%, 700px);
+    min-height: 90dvh;
+    margin: 1rem auto 0 auto;
+    /* margin: 0 auto; */
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.help-grey-card-modal-content-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.help-grey-card-modal-content-img img {
+    width: clamp(200px, 27rem, 500px);
+    height: 100%;
+}
+
+.help-grey-card-modal-content-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.help-grey-card-modal-content-header-right button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+.help-grey-card-modal-content-header-right svg {
+    width: 3rem;
+    height: 3rem;
 }
 
 /* Animation */
@@ -229,5 +287,52 @@ body {
 
     100% {
         transform: translateY(0);
+    }
+}
+
+@keyframes giggle {
+    0% {
+        transform: rotate(0);
+    }
+
+    5% {
+        transform: rotate(-50deg);
+    }
+
+    10% {
+        transform: rotate(45deg);
+    }
+
+    15% {
+        transform: rotate(-40deg);
+    }
+
+    20% {
+        transform: rotate(35deg);
+    }
+
+    25% {
+        transform: rotate(-30deg);
+    }
+
+    30% {
+        transform: rotate(25deg);
+    }
+
+    35% {
+        transform: rotate(-20deg);
+    }
+
+    40% {
+        transform: rotate(15deg);
+    }
+
+    45% {
+        transform: rotate(-10deg);
+    }
+
+    50%,
+    100% {
+        transform: rotate(0deg);
     }
 }
