@@ -1,17 +1,19 @@
 <template>
     <div class="main-container">
         <div class="main-header">
-            <h1>Indiquez la date de mise en circulation de votre véhicule</h1>
+            <h1>
+                Indiquez la date de 1ère mise en circulation de votre véhicule
+            </h1>
             <BsQuestionCircle @click="toggleModal" />
         </div>
         <div class="main-content">
             <div class="circulation-date-container">
-                <div class="circulation-date-item">
-                    <h4>Jusqu'au 02/2018</h4>
-                </div>
-                <div class="circulation-date-item">
-                    <h4>Depuis le 03/2018</h4>
-                </div>
+                <NuxtLink :to="`/productType/1`" class="circulation-date-item"
+                    >Jusqu'au 02/2018</NuxtLink
+                >
+                <NuxtLink :to="`/productType/2`" class="circulation-date-item"
+                    >Depuis le 03/2018</NuxtLink
+                >
             </div>
         </div>
     </div>

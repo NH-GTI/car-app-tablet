@@ -136,7 +136,8 @@ img {
 
 .brand-item,
 .subcategory-item,
-.circulation-date-item {
+.circulation-date-item,
+.product-type-item {
     background-color: white;
     text-decoration: none;
     border-radius: 8px;
@@ -154,7 +155,8 @@ img {
 
 .brand-item:hover,
 .subcategory-item:hover,
-.circulation-date-item:hover {
+.circulation-date-item:hover,
+.product-type-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
