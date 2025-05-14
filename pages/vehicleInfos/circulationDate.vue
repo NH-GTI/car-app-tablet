@@ -8,10 +8,10 @@
         </div>
         <div class="main-content">
             <div class="circulation-date-container">
-                <NuxtLink :to="`/productType/1`" class="circulation-date-item"
+                <NuxtLink :to="`/productSpec/1`" class="circulation-date-item"
                     >Jusqu'au 02/2018</NuxtLink
                 >
-                <NuxtLink :to="`/productType/2`" class="circulation-date-item"
+                <NuxtLink :to="`/productSpec/2`" class="circulation-date-item"
                     >Depuis le 03/2018</NuxtLink
                 >
             </div>
