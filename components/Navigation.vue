@@ -42,7 +42,7 @@
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        margin: 0 0 4rem 0;
+        margin: 0 0 2rem 0;
         background-color: rgb(255, 255, 255);
         height: 5rem;
     }

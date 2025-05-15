@@ -10,6 +10,7 @@
         <!-- Main Content -->
         <main>
             <slot />
+            <NeedHelp />
         </main>
 
         <!-- Footer -->
