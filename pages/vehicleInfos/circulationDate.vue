@@ -25,8 +25,6 @@
 
     const modalStore = useModalStore();
 
-    const { showModal } = storeToRefs(modalStore);
-
     const toggleModal = () => {
         console.log("toggleModal");
         modalStore.toggleModal();

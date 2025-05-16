@@ -5,13 +5,22 @@
             <p>Cliquez ici</p>
         </div>
         <div>
-            <button>Où trouver la date de 1ère mise en circulation ?</button>
+            <button @click="toggleModal">
+                Où trouver la date de 1ère mise en circulation ?
+            </button>
         </div>
     </div>
 </template>
 
 <script setup>
-    const isOpen = ref(false);
+    import { useModalStore } from "@/stores/modal";
+
+    const modalStore = useModalStore();
+
+    const toggleModal = () => {
+        console.log("toggleModal");
+        modalStore.toggleModal();
+    };
 
     const toggleHelp = () => {
         const helpButton = document.querySelector(
