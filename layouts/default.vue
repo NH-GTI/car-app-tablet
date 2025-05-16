@@ -10,11 +10,12 @@
         <!-- Main Content -->
         <main>
             <slot />
+            <NeedHelp />
         </main>
 
         <!-- Footer -->
         <footer>
-            <Footer />
+            <!-- <Footer /> -->
         </footer>
     </div>
 </template>
