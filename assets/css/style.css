@@ -324,6 +324,40 @@ img {
     min-width: 500px;
 }
 
+.line-1,
+.line-2 {
+    position: fixed;
+    border-bottom: 3px dashed rgb(224, 224, 19);
+    border-left: 3px dashed rgb(224, 224, 19);
+}
+
+.line-3 {
+    position: fixed;
+    border-top: 3px dashed rgb(224, 224, 19);
+    border-left: 3px dashed rgb(224, 224, 19);
+}
+
+.line-1 {
+    top: 21rem;
+    left: 43%;
+    width: 21rem;
+    height: 3rem;
+}
+
+.line-2 {
+    top: 21rem;
+    left: 48%;
+    width: 15rem;
+    height: 9rem;
+}
+
+.line-3 {
+    top: 35.5rem;
+    left: 45.5%;
+    width: 18rem;
+    height: 3.1rem;
+}
+
 /* Animation */
 
 @keyframes gradient-animation {

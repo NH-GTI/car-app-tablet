@@ -8,12 +8,15 @@
                 class="product-spec-image"
             />
             <div class="product-spec-buttons">
+                <div class="line-1"></div>
                 <NuxtLink to="/productType/1" class="product-spec-button"
                     >Conducteur</NuxtLink
                 >
+                <div class="line-2"></div>
                 <NuxtLink to="/productType/1" class="product-spec-button"
                     >Passager</NuxtLink
                 >
+                <div class="line-3"></div>
                 <NuxtLink to="/productType/1" class="product-spec-button"
                     >Arrière</NuxtLink
                 >
