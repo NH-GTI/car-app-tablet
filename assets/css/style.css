@@ -30,6 +30,10 @@ img {
     height: auto;
 }
 
+.main-content {
+    margin-top: 2rem;
+}
+
 .main-header {
     display: flex;
     text-align: center;
@@ -132,6 +136,15 @@ img {
     padding: 20px;
     max-width: 1400px;
     margin: 0 auto;
+}
+
+.product-type-grid {
+    display: grid;
+    grid-template-columns: 20rem 20rem 20rem;
+    gap: 3rem;
+    margin-top: 5rem;
+    justify-items: center;
+    justify-content: center;
 }
 
 .brand-item,
@@ -260,6 +273,89 @@ img {
 .help-grey-card-modal-content-header-right svg {
     width: 3rem;
     height: 3rem;
+}
+
+/* Product Type */
+
+.product-type-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+/* Product Spec */
+
+.product-spec-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.product-spec-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.product-spec-button {
+    background-color: transparent;
+    /* border: none; */
+    cursor: pointer;
+    border: 1px solid var(--text-color);
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.product-spec-button:hover {
+    background-color: var(--button-color);
+    color: var(--button-text-color);
+}
+
+.product-spec-image {
+    width: 30%;
+    height: 100%;
+    object-fit: cover;
+    min-width: 500px;
+}
+
+.line-1,
+.line-2 {
+    position: fixed;
+    border-bottom: 3px dashed rgb(224, 224, 19);
+    border-left: 3px dashed rgb(224, 224, 19);
+}
+
+.line-3 {
+    position: fixed;
+    border-top: 3px dashed rgb(224, 224, 19);
+    border-left: 3px dashed rgb(224, 224, 19);
+}
+
+.line-1 {
+    top: 21rem;
+    left: 43%;
+    width: 21rem;
+    height: 3rem;
+}
+
+.line-2 {
+    top: 21rem;
+    left: 48%;
+    width: 15rem;
+    height: 9rem;
+}
+
+.line-3 {
+    top: 35.5rem;
+    left: 45.5%;
+    width: 18rem;
+    height: 3.1rem;
 }
 
 /* Animation */
