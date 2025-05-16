@@ -15,7 +15,7 @@
 
         <!-- Footer -->
         <footer>
-            <!-- <Footer /> -->
+            <Footer />
         </footer>
     </div>
 </template>
