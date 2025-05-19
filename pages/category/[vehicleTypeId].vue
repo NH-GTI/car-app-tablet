@@ -5,38 +5,35 @@
         <h3>Faites défiler pour voir toutes les catégories</h3>
         <div class="main-content">
             <div class="category-container">
-                <NuxtLink :to="`/brand/1`"
+                <NuxtLink
+                    v-for="category in categories"
+                    :key="category.id"
+                    :to="`/brand/${category.id}`"
                     ><img src="/public/img/essuie-glace.jpg" alt="" />
-                    Essuie-glace</NuxtLink
-                >
-                <NuxtLink :to="`/brand/1`"
-                    ><img src="/public/img/batterie.jpeg" alt="" />
-                    Batterie</NuxtLink
-                >
-                <NuxtLink :to="`/brand/1`"
-                    ><img src="/public/img/eclairage.jpg" alt="" />
-                    Éclairage</NuxtLink
-                >
-                <NuxtLink :to="`/brand/1`"
-                    ><img src="/public/img/huile-moteur.png" alt="" /> Huile
-                    moteur</NuxtLink
-                >
-                <NuxtLink :to="`/brand/1`"
-                    ><img src="/public/img/interieur.jpg" alt="" />
-                    Intérieur</NuxtLink
-                >
-                <NuxtLink :to="`/brand/1`"
-                    ><img src="/public/img/siege.jpg" alt="" /> Siège</NuxtLink
-                >
-                <NuxtLink :to="`/brand/1`"
-                    ><img src="/public/img/siege.jpg" alt="" /> Siège</NuxtLink
-                >
-                <NuxtLink :to="`/brand/1`"
-                    ><img src="/public/img/siege.jpg" alt="" /> Siège</NuxtLink
+                    {{ category.name }}</NuxtLink
                 >
             </div>
         </div>
     </div>
 </template>
 
-<script setup></script>
+<script setup>
+    const categories = ref([]);
+
+    onMounted(async () => {
+        try {
+            const response = await $fetch(
+                "http://localhost:1337/api/categories",
+                {
+                    headers: {
+                        Authorization: `Bearer 8b8035ecfa9bad12250953179a66389b18585ab5cef7c6741bfc315cec85693b6acb87781457e43f190ee10f6ba15df880fd8d8db012697d7652826032b31dcd09cb965713cf01f21128951c77fe9aaa7b11345402ff88d9a69efbe2d1cef518aa762a7cc7b522ce2fca88e358a8d2f3ead3c3ef14d6142bf1bfe59e54a6be5f`,
+                    },
+                }
+            );
+            categories.value = response.data;
+            console.log("Categories:", categories.value);
+        } catch (error) {
+            console.error("Error fetching categories:", error);
+        }
+    });
+</script>

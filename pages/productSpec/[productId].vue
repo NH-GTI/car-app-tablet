@@ -1,6 +1,6 @@
 <template>
     <div class="main-container">
-        <h1>Veuillez indiquer l'emplacement de l'essuie glace souhaité</h1>
+        <h1>Veuillez indiquer l'emplacement de l'essuie-glace souhaité</h1>
         <div class="product-spec-content">
             <img
                 src="@/public/img/white-car-small.png"
