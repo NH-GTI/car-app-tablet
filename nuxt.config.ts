@@ -10,7 +10,29 @@ export default defineNuxtConfig({
                 autoImports: ["defineStore", "acceptHMRUpdate"],
             },
         ],
+        "@nuxtjs/strapi",
     ],
+    runtimeConfig: {
+        public: {
+            strapi: {
+                url: process.env.STRAPI_URL || "http://localhost:1337",
+            },
+        },
+        strapi: {
+            token: process.env.STRAPI_TOKEN,
+        },
+    },
+    strapi: {
+        url: process.env.STRAPI_URL || "http://localhost:1337",
+        prefix: "/api",
+        admin: "admin",
+        version: "v5",
+        cookie: {},
+        cookieName: "strapi_jwt",
+    },
+    future: {
+        compatibilityVersion: 4,
+    },
     imports: {
         dirs: ["stores"],
     },
