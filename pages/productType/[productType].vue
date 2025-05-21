@@ -1,5 +1,10 @@
 <template>
     <div class="main-container">
+        <div class="choices-summary">
+            <div class="summary-content">
+                <p>Essuie-glace > Audi > A1 > Après 2018 > Conducteur</p>
+            </div>
+        </div>
         <h1>Type d'essuie-glace</h1>
         <div class="main-content">
             <div class="product-type-grid">

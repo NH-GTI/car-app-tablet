@@ -1,4 +1,12 @@
 <template>
+    <div class="choices-summary">
+        <div class="summary-content">
+            <p>
+                Essuie-glace > Audi > A1 > Après 2018 > Conducteur > Balai
+                d'essuie-glace plat universel
+            </p>
+        </div>
+    </div>
     <h1>Liste des produits compatibles avec votre véhicule</h1>
     <div class="product-list-container">
         <div class="product-list-item">
@@ -28,9 +36,6 @@
                     <li>
                         <span>Emplacement :</span>
                         Côté conducteur
-                    </li>
-                    <li class="success-message">
-                        Compatible avec votre véhicule
                     </li>
                 </ul>
             </div>
@@ -63,9 +68,6 @@
                         <span>Emplacement :</span>
                         Côté conducteur
                     </li>
-                    <li class="success-message">
-                        Compatible avec votre véhicule
-                    </li>
                 </ul>
             </div>
         </div>
@@ -85,6 +87,9 @@
     import { BsBook } from "@kalimahapps/vue-icons";
     import { BsZoomIn } from "@kalimahapps/vue-icons";
     import { BsX } from "@kalimahapps/vue-icons";
+    import { useCustomerChoicesStore } from "~/stores/customerChoices";
+
+    const store = useCustomerChoicesStore();
 
     const showModal = ref(false);
     const modalImg = ref("");
@@ -184,7 +189,7 @@
 
     .product-list-item img {
         padding: 1rem;
-        max-height: 35rem;
+        max-height: 57dvh;
     }
 
     .product-list-item-details {
@@ -222,10 +227,10 @@
         background-color: white;
         /* opacity: 0; */
         position: relative;
-        left: -4.5rem;
+        left: -9.5rem;
         z-index: -1;
         padding: 1rem;
-        max-height: 37rem;
+        max-height: 28rem;
     }
 
     .product-list-item-details-description ul {
@@ -284,6 +289,7 @@
     .showing-description {
         opacity: 1;
         width: 26rem;
+        left: -4.5rem;
     }
 
     .modal-zoom {

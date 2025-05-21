@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
 
 :root {
     --body-background-color: rgb(247, 247, 247);
@@ -9,8 +11,9 @@
 
 body {
     margin: 0;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Roboto Slab", sans-serif;
     font-weight: 100;
+    font-optical-sizing: auto;
     height: 100dvh;
     /* background: linear-gradient(300deg, #6a6f74, #3285bd, deepskyblue); */
     /* background-size: 180% 180%; */
@@ -99,8 +102,8 @@ img {
 
 .category-container>a {
     border-radius: 20px;
-    width: 25rem;
-    height: 15rem;
+    width: 18rem;
+    height: 12rem;
     transition: all 0.3s ease;
     box-shadow: rgba(0, 0, 0, 0.45) 0px 17px 20px -8px;
     text-decoration: none;
@@ -254,8 +257,8 @@ img {
 }
 
 .help-grey-card-modal-content-img img {
-    width: clamp(200px, 27rem, 500px);
-    height: 100%;
+    /* width: clamp(200px, 27rem, 500px); */
+    height: 80dvh;
 }
 
 .help-grey-card-modal-content-header {
@@ -338,24 +341,40 @@ img {
 }
 
 .line-1 {
-    top: 21rem;
-    left: 43%;
-    width: 21rem;
-    height: 3rem;
+    top: 19.5rem;
+    left: 41%;
+    width: 17.7rem;
+    height: 1rem;
 }
 
 .line-2 {
-    top: 21rem;
-    left: 48%;
-    width: 15rem;
-    height: 9rem;
+    top: 19.5rem;
+    left: 46%;
+    width: 14rem;
+    height: 6.7rem;
 }
 
 .line-3 {
-    top: 35.5rem;
-    left: 45.5%;
-    width: 18rem;
-    height: 3.1rem;
+    top: 32rem;
+    left: 43.5%;
+    width: 15.5rem;
+    height: 2.9rem;
+}
+
+/* Choices Summary */
+
+.choices-summary {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 0 0 1rem;
+    margin-bottom: 1rem;
+}
+
+.choices-summary p {
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 /* Animation */

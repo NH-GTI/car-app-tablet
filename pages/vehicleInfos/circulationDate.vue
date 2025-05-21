@@ -1,5 +1,10 @@
 <template>
     <div class="main-container">
+        <div class="choices-summary">
+            <div class="summary-content">
+                <p>Essuie-glace > Audi > A1</p>
+            </div>
+        </div>
         <div class="main-header">
             <h1>
                 Indiquez la date de 1ère mise en circulation de votre véhicule

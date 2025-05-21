@@ -1,5 +1,10 @@
 <template>
     <div class="main-container">
+        <div class="choices-summary">
+            <div class="summary-content">
+                <p>Essuie-glace > Audi > A1 > Après 03/2018</p>
+            </div>
+        </div>
         <h1>Veuillez indiquer l'emplacement de l'essuie-glace souhaité</h1>
         <div class="product-spec-content">
             <img

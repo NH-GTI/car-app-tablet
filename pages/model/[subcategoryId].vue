@@ -1,5 +1,10 @@
 <template>
     <div class="main-container">
+        <div class="choices-summary">
+            <div class="summary-content">
+                <p>Essuie-glace > Audi</p>
+            </div>
+        </div>
         <h1>Indiquez le modèle de votre véhicule</h1>
         <div class="main-content">
             <div class="subcategory-grid">
