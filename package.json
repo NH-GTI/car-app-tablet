@@ -1,22 +1,23 @@
 {
-  "name": "nuxt-app",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
-  },
-  "dependencies": {
-    "@kalimahapps/vue-icons": "^1.7.1",
-    "@nuxtjs/strapi": "^2.0.0",
-    "@pinia/nuxt": "^0.11.0",
-    "@vite-pwa/nuxt": "^1.0.0",
-    "nuxt": "^3.17.0",
-    "pinia": "^3.0.2",
-    "vue": "^3.5.13",
-    "vue-router": "^4.5.1"
-  }
+    "name": "nuxt-app",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "nuxt build",
+        "dev": "nuxt dev",
+        "generate": "nuxt generate",
+        "preview": "nuxt preview",
+        "postinstall": "nuxt prepare",
+        "start": "nuxt start"
+    },
+    "dependencies": {
+        "@kalimahapps/vue-icons": "^1.7.1",
+        "@nuxtjs/strapi": "^2.0.0",
+        "@pinia/nuxt": "^0.11.0",
+        "@vite-pwa/nuxt": "^1.0.1",
+        "nuxt": "^3.17.0",
+        "pinia": "^3.0.2",
+        "vue": "^3.5.13",
+        "vue-router": "^4.5.1"
+    }
 }
