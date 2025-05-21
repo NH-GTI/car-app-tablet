@@ -12,7 +12,7 @@
                 </div>
             </div>
             <div class="help-grey-card-modal-content-img">
-                <img src="/assets/img/carte_grise.jpg" alt="carte grise" />
+                <img src="/assets/img/carte_grise.png" alt="carte grise" />
             </div>
         </div>
     </div>
