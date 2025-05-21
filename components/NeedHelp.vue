@@ -42,7 +42,7 @@
         border-radius: 10px 0 0 10px;
         margin-top: 20px;
         position: fixed;
-        top: 10rem;
+        top: 7rem;
         right: 0;
         box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
         cursor: pointer;
@@ -65,7 +65,7 @@
         padding: 1rem;
         border-radius: 10px;
         position: fixed;
-        top: 10rem;
+        top: 7rem;
         right: -20rem;
         width: 10rem;
         box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);

@@ -1,5 +1,10 @@
 <template>
     <div class="main-container">
+        <div class="choices-summary">
+            <div class="summary-content">
+                <p>Essuie-glace</p>
+            </div>
+        </div>
         <h1>Indiquez la marque de votre véhicule</h1>
         <div class="main-content">
             <div class="brands-grid">
@@ -26,3 +31,8 @@
         </div>
     </div>
 </template>
+<script setup>
+    const { categoryId } = useRoute().params;
+    const store = useCustomerChoicesStore();
+    store.setChoice("brand", categoryId);
+</script>
