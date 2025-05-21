@@ -341,23 +341,23 @@ img {
 }
 
 .line-1 {
-    top: 19.5rem;
+    top: 20.5rem;
     left: 41%;
     width: 17.7rem;
     height: 1rem;
 }
 
 .line-2 {
-    top: 19.5rem;
+    top: 20.5rem;
     left: 46%;
     width: 14rem;
     height: 6.7rem;
 }
 
 .line-3 {
-    top: 32rem;
+    top: 33rem;
     left: 43.5%;
-    width: 15.5rem;
+    width: 16rem;
     height: 2.9rem;
 }
 
@@ -373,7 +373,7 @@ img {
 }
 
 .choices-summary p {
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 600;
 }
 
